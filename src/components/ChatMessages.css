@@ -4,6 +4,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     overflow: scroll;
-    padding-left: 5px;
-    padding-right: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    margin-left: 10px;
+    margin-right: 10px;
 }

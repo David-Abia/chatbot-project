@@ -17,8 +17,10 @@ const Input = ({ chatMessages, setChatMessages }) => {
 
    async function sendMessage() {
 
-    
-            const newChatMessage =      [ 
+    if(inputedMessages === "" || inputedMessages === " ") {
+      return
+    } else {
+const newChatMessage =      [ 
                        ...chatMessages,
                     {
                             sender: 'user',
@@ -50,22 +52,37 @@ const Input = ({ chatMessages, setChatMessages }) => {
     }, 
   ]) 
      setInputedMessages('');
+    }
+    
+            
    }
  const clear = () => {
         setChatMessages([]);
      }
    
   return (
+   
     <div className="input-container">
+        <button className="clear-button" onClick={clear}>Clear</button>
+         
       <input className="chat-input" type="text" 
       placeholder="Say hello to chatbot"
       size="30"
+      onKeyDown={(e) => {
+    if (e.key === "Enter") {
+      sendMessage();
+    }
+  }}
       value={inputedMessages}
       onChange={saveMessage}
       />
-      <button className="send-button" onClick={sendMessage}>Send</button>  
-      <button className="clear-button" onClick={clear}>Clear</button>
+      <button className="send-button" 
+      onClick={sendMessage}
+      >
+        Send</button>  
+       
     </div>
+    
   )
 }
 

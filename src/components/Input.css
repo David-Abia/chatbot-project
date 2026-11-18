@@ -10,40 +10,56 @@
     border: none;
     outline: none;
     border: 2px solid #198754;
-    width: 50%;
-      flex: 1;
-      font-size: 20px;
+    width: 100%;
+    flex-grow: 1;
+    font-size: 20px;
+    color: #198754;
+     
 }
 .send-button{
-    padding: 10px 20px;
+    padding: 3px 15px;
     cursor: pointer;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 5px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
     font-size: 20px;
     color: #ffff;
     background: #198754;
+    outline: none;
     
 }
+.send-button:hover{
+     /* background: #02b821; */
+     background: #02b821;
+}
 .clear-button{
-    padding: 10px 20px;
+    padding: 3px 15px;
     cursor: pointer;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+   
+    border-top-left-radius: 15px; 
+   border-bottom-right-radius: 15px; 
+   margin-right: 5px;
     border: none;
      font-size: 20px;
     color: #ffff;
     background: #198754;
+    outline: none;
 }
+.clear-button:hover{
+     /* background: black; */
+     background: #02b821;
+} 
 .input-container{
     display: flex;
-    max-height: 55px;
+    flex-direction: row;
+    /* max-height: 55px; */
     /* margin-left: 5px;
     margin-right: 5px; */
-    flex-grow: 1;
     margin-bottom: 70px;
-    
-
+    margin-left: 10px;
+    margin-right: 10px;   
 }
+
+
 

@@ -13,7 +13,7 @@ import dayjs from 'dayjs';
 <div className='chat-message-text'>
     {message}
     {time && (
-    <div className='time'> {dayjs(time).format(`h:mma `)} ago</div>
+    <div className='time'> {dayjs(time).format(`h:mma `)}</div>
 )}
 </div>
 
