@@ -1,0 +1,9 @@
+.chat-messages-container{
+    flex-grow: 1;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: scroll;
+    padding-left: 5px;
+    padding-right: 5px;
+}
